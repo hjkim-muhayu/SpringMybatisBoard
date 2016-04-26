@@ -9,7 +9,7 @@ create table board (
 	create_date	datetime,
 	modify_date	datetime,
 	PRIMARY KEY (no)
-);
+)
 
 
 2. Add DB Resource Info in server.xml
