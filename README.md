@@ -25,4 +25,6 @@ create table board (
 			maxActive="15"
 			maxIdle="3"/>
 
-3. http://~~/SpringMybatisBoard/index.do
+3. index
+========================================
+http://~~/SpringMybatisBoard/index.do
