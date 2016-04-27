@@ -27,8 +27,5 @@ create table board (
 
 3. index
 ========================================
-<<<<<<< HEAD
 http://~~/SpringMybatisBoard/index.do
-=======
-http://~~/SpringMybatisBoard/index.do
->>>>>>> 546e36a750cdde62dba7215c77f7016aa8e498ad
+
