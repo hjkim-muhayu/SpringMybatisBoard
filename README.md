@@ -24,3 +24,5 @@ create table board (
 			url="jdbc:mysql://localhost:3306/mysql"
 			maxActive="15"
 			maxIdle="3"/>
+
+3. http://~~/SpringMybatisBoard/index.do
