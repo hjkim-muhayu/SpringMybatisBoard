@@ -8,7 +8,6 @@ public class BoardModel implements Serializable{
 	private int no;
 	private String title;
 	private String contents;
-	private String create_date;
 	private String modify_date;
 	
 	/** paging **/
@@ -22,12 +21,11 @@ public class BoardModel implements Serializable{
 		super();
 	}
 	
-	public BoardModel(int no, String title, String contents, String create_date, String modify_date, String pageNum, int listCount, int pagePerBlock, int startIndex, String searchText) {
+	public BoardModel(int no, String title, String contents, String modify_date, String pageNum, int listCount, int pagePerBlock, int startIndex, String searchText) {
 		super();
 		this.no = no;
 		this.title = title;
 		this.contents = contents;
-		this.create_date = create_date;
 		this.modify_date = modify_date;
 		this.pageNum = pageNum;
 		this.listCount = listCount;
@@ -53,12 +51,6 @@ public class BoardModel implements Serializable{
 	}
 	public void setContents(String contents) {
 		this.contents = contents;
-	}
-	public String getCreate_date() {
-		return create_date;
-	}
-	public void setCreate_date(String create_date) {
-		this.create_date = create_date;
 	}
 	public String getModify_date() {
 		return modify_date;
@@ -110,8 +102,7 @@ public class BoardModel implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "BoardModel [no=" + no + ", title=" + title + ", contents=" + contents + ", create_date=" + create_date
-				+ ", modify_date=" + modify_date + ", pageNum=" + pageNum + ", listCount=" + listCount
+		return "BoardModel [no=" + no + ", title=" + title + ", contents=" + contents + ", modify_date=" + modify_date + ", pageNum=" + pageNum + ", listCount=" + listCount
 				+ ", pagePerBlock=" + pagePerBlock + ", startIndex=" + startIndex + ", searchText=" + searchText + "]";
 	}
 	

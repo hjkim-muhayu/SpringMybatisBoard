@@ -64,7 +64,7 @@ if(request.getAttribute("PageNavigator")!=null) {
 	<th width="60" class="alignCentre">No</th>
 	<th width="250">Title</th>
 	<th>Contents</th>
-	<th width="130" class="alignCentre">Create Date</th>
+	<th width="130" class="alignCentre">Modify Date</th>
 </tr>
 
 <% for (int i=0; i<boardList.size(); i++) { 
@@ -88,7 +88,7 @@ if(request.getAttribute("PageNavigator")!=null) {
 	<td class="alignCentre"><a href="./boardUpdate.do?no=<%=board.getNo()%>&pageNum=<%=pageNum%>&searchText=<%=searchText%>"><%=((pageNum-1) * listCount) + (i + 1)%></a></td>
 	<td><a href="./boardUpdate.do?no=<%=board.getNo()%>&pageNum=<%=pageNum%>&searchText=<%=searchText%>"><%=titleStr%></a></td>
 	<td><a href="./boardUpdate.do?no=<%=board.getNo()%>&pageNum=<%=pageNum%>&searchText=<%=searchText%>"><%=contentStr%></a></td>
-	<td class="alignCentre"><a href="./boardUpdate.do?no=<%=board.getNo()%>&pageNum=<%=pageNum%>&searchText=<%=searchText%>"><%=board.getCreate_date()%></a></td>
+	<td class="alignCentre"><a href="./boardUpdate.do?no=<%=board.getNo()%>&pageNum=<%=pageNum%>&searchText=<%=searchText%>"><%=board.getModify_date()%></a></td>
 </tr>
 <% } %>
 </table>

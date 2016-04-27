@@ -11,11 +11,7 @@
 
 </head>
 <body>
-- Maven + Spring MVC + MySQL
-<br>
-<a href="boardList.do?pageNum=1&searchText=">- Maven + Spring MVC + MyBatis + MySQL</a>
-<br>
-<a href="boardList.do?pageNum=1&searchText=">- Maven + Spring MVC + Hibernate + MySQL</a>
+<a href="boardList.do">- Spring MVC + MyBatis + MySQL</a>
 
 </body>
 </html>

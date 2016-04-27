@@ -18,10 +18,16 @@ public class BoardController {
 		this.dao = dao;
 	}
 	
-	@RequestMapping(value="/boardList.do") 
-	public ModelAndView boardList(@RequestParam String pageNum, @RequestParam String searchText) {		
+	@RequestMapping(value={"/boardList.do", "/"}) 
+	public ModelAndView boardList(@RequestParam(value="pageNum", required=false) String pageNum, 
+			                      @RequestParam(value="searchText", required=false) String searchText) {		
+		if(pageNum==null) {
+			pageNum = "1";
+		}
+		if(searchText==null) {
+			searchText = "";
+		}
 		int totalCount = dao.getBoardCount();
-		
 		BoardModel boardModel = new BoardModel();
 		boardModel.setPageNum(pageNum);
 		boardModel.setSearchText(searchText);

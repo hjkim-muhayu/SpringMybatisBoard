@@ -48,11 +48,7 @@ if(request.getAttribute("boardModel")!=null) {
 </tr>
 <tr>
 	<td colspan="2">
-	<% if (boardUpdate.getModify_date()==null || boardUpdate.getCreate_date().equals(boardUpdate.getModify_date())) {%>
-	<%=boardUpdate.getCreate_date()%> created
-	<%} else {%>
 	<%=boardUpdate.getModify_date()%> modified
-	<%}%>
 	</td>
 </tr>
 </table>
